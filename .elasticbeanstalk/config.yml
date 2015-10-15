@@ -1,6 +1,8 @@
 branch-defaults:
   default:
     environment: configuration-service-0
+  master:
+    environment: configuration-service-0
 global:
   application_name: configuration-service
   default_ec2_keyname: null

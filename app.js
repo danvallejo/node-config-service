@@ -29,7 +29,7 @@ function logErrors(error, request, response, next)
 function getAll(request, response){
 	var token = request.headers["x-auth"]
 	var missing = request.headers['x-missing']
-    response.send([{headers: request.headers, token: token, missing: missing + '_'},{users: users}]);
+    response.send({headers: request.headers, token: token, missing: missing + '_', users: users});
 }
 
 function getSingle(request, response){
